@@ -100,7 +100,7 @@ def create_employee_dictionary():
 
     employee_birth_year = read_year()
     employee_birth_month = read_month()
-    employee_birth_day   = read_day()
+    employee_birth_day = read_day()
 
     employee_is_graduated = read_is_graduated()
 
@@ -183,6 +183,7 @@ def update_employee_data(employee_id):
         print("invalid option")
 
 
+
 if __name__ == "__main__":
     all_employees_dict = {}
     while True:
@@ -213,8 +214,8 @@ if __name__ == "__main__":
             employee_id = read_employee_id()
             update_employee_data(employee_id)
 
-        elif option == "Number of employee":
-            print(f"There are {}")
+        elif option == "number":
+            print(len(all_employees_dict))
 
         elif option == "exit":
             print("Thanks, see you later")
